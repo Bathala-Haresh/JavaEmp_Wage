@@ -1,24 +1,31 @@
 /**
-* This program is to welcome user to Empwage problem
+* This program is to calculate employee wage
 *
 * @author  Bathala Haresh
 */
 
-class Empwage
+ public class Empwage
 {
     public static void main(String args[])
     {
-        System.out.println("Attendence Checking ....");
+        //constants
+        final int fullTime = 1;
+        final int wageHr = 20;
         
-        //Random function to get either 1 or 0
-        int employee=(int)(Math.random() * 100) % 2;
-       
-        if(employee == 1)
+        int empType = (int) (Math.random() * 100) % 2;
+        int workingHours = 0;
+        
+        //If condition to check employee is present or absent
+        if (empType == fullTime)
         {
-            System.out.print("present");
+            System.out.println("Employee is Present so ...");
+            workingHours = 8;
+        } else
+        {
+            System.out.println("Employee is Absent so ...");
         }
-        else{
-            System.out.print("absent");
-        }
+        //calculating the wage
+        int wage = workingHours * wageHr;
+        System.out.println("Employee Daily Wage is " + wage);
     }
 }
