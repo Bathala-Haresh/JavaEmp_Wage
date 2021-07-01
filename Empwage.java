@@ -1,5 +1,5 @@
 /**
-* This program is to welcome user to Empwage problem
+* This program is to check employee is present or absent
 *
 * @author  Bathala Haresh
 */
