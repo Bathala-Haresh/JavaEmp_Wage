@@ -4,7 +4,7 @@
 * @author  Bathala Haresh
 */
 
-class EmpWage
+class Empwage
 {
     public static void main(String args[])
     {
